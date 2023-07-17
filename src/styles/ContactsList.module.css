@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    gap: 50px;
+    gap: 20px;
     opacity: 0;
     animation-name: fadeIn;
     animation-duration: 0.8s;
@@ -12,6 +12,26 @@
     margin-bottom: 50px;
 }
 
+.search {
+    border: none;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 10px;
+    width: 80%;
+    max-width: 800px;
+    min-width: 300px;
+    border: none;
+    border-bottom: 1px dashed var(--color-dark);
+    margin-bottom: 20px;
+    opacity: 0.3;
+    transition: ease 0.3s;
+}
+
+.search:focus {
+    outline: none;
+    opacity: 1;
+    transition: ease 0.3s;
+}
 .contactsList {
     display: flex;
     align-items: center;
@@ -26,10 +46,13 @@
 
 .contactLink {
     cursor: pointer;
+    text-decoration: none;
+    transition: ease 0.3s;
 }
 
 .contactLink:hover {
     opacity: 0.9;
+    transition: ease 0.3s;
 }
 .singleContact {
     display: flex;
@@ -37,12 +60,16 @@
     align-items: center;
     justify-content: center;
     width: 350px;
-    height: 200px;
+    padding: 50px 0;
     border: none;
     border-radius: 10px;
     box-shadow: 1px 1px 5px var(--color-dark);
     background-color: var(--color-dark-2);
     color: var(--color-gray);
+}
+
+.singleContact img {
+    margin-bottom: 10px;
 }
 
 .singleContact p, .singleContact h4 {

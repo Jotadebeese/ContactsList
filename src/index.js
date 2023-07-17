@@ -4,12 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Navbar from './components/NavBar';
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import SingleContact from './pages/contact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Navbar />
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<App />} />
+        <Route path=':id' element={<SingleContact />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

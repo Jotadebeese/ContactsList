@@ -9,10 +9,10 @@ export default function Navbar() {
             </div>
             <ul className={styles.links}>
                 <li>
-                    <a>Link1</a>
+                    <a href='/'>Link1</a>
                 </li>
                 <li>
-                    <a>Link2</a>
+                    <a href='/'>Contacts</a>
                 </li>
                 <li className={styles.signOut}>
                     <a>Sign Out</a>

@@ -35,6 +35,8 @@
 
 .links a {
     cursor: pointer;
+    text-decoration: none;
+    color: var(--color-black);
 }
 
 .signOut {
@@ -45,4 +47,8 @@
     box-shadow: -5px -5px 5px var(--color-gray-2);
     cursor: pointer;
     font-weight: 700;
+}
+
+.signOut a {
+    color: var(--color-gray);
 }
