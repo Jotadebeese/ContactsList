@@ -1,3 +1,12 @@
+:root {
+  --color-black: black;
+  --color-dark: rgb(20, 20, 20);
+  --color-dark-2: rgb(59, 59, 59);
+  --color-gray: rgb(253, 245, 238);
+  --color-gray-2: rgb(233, 204, 179);
+  --color-light: rgb(253, 253, 253);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +19,20 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.fade-in {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

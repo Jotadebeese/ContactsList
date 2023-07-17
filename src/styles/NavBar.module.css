@@ -1,0 +1,48 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 20px;
+    padding: 10px 0;
+}
+
+.company img {
+    width: 60px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50px;
+    list-style: none;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .links {
+        width: 100%;
+    }
+}
+
+.links a {
+    cursor: pointer;
+}
+
+.signOut {
+    background-color: var(--color-dark-2);
+    color: var(--color-gray);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: -5px -5px 5px var(--color-gray-2);
+    cursor: pointer;
+    font-weight: 700;
+}

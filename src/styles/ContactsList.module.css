@@ -1,0 +1,60 @@
+.contactsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    margin-bottom: 50px;
+}
+
+.contactsList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 90%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contactLink {
+    cursor: pointer;
+}
+
+.contactLink:hover {
+    opacity: 0.9;
+}
+.singleContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px var(--color-dark);
+    background-color: var(--color-dark-2);
+    color: var(--color-gray);
+}
+
+.singleContact p, .singleContact h4 {
+    margin: 0;
+    padding: 5px;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

@@ -1,0 +1,26 @@
+.profileContainer {
+    margin: 100px 0 20px 0;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+.profileContainer img {
+    width: 100px;
+}
+
+.profileContainer i {
+    background-color: var(--color-gray);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
